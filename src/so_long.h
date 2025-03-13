@@ -13,11 +13,11 @@
 #ifndef SO_LONG_H
 # define SO_LONG_H
 
-# include "printf/ft_printf.h"
-# include "libft/libft.h"
-# include "getnextline/get_next_line.h"
+# include "../printf/ft_printf.h"
+# include "../libft/libft.h"
+# include "../getnextline/get_next_line.h"
 # include <X11/X.h>
-# include "minilibx-linux/mlx.h"
+# include "../minilibx-linux/mlx.h"
 # include <X11/keysym.h>
 # include <fcntl.h>
 # include <limits.h>

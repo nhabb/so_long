@@ -6,7 +6,7 @@
 /*   By: nhaber <nhaber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/28 16:42:11 by nhaber            #+#    #+#             */
-/*   Updated: 2025/03/06 14:03:48 by nhaber           ###   ########.fr       */
+/*   Updated: 2025/03/13 08:10:46 by nhaber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,6 @@ void	load_game(t_long *game)
 
 void	window_cleaner(t_long *game)
 {
-	int	i;
-
-	i = 0;
 	if (game->img_wall)
 		mlx_destroy_image(game->mlx, game->img_wall);
 	if (game->img_collectible)

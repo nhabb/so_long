@@ -6,7 +6,7 @@
 /*   By: nhaber <nhaber@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/01 13:37:10 by nhaber            #+#    #+#             */
-/*   Updated: 2025/03/06 15:03:37 by nhaber           ###   ########.fr       */
+/*   Updated: 2025/03/13 08:07:58 by nhaber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	load_player(t_long *game, int width, int height)
 {
 	char	*path;
 
-	path = "./textures/player.xpm";
+	path = "../textures/player.xpm";
 	game->pl_im = malloc(sizeof(t_image));
 	if (!game->pl_im)
 	{
@@ -43,13 +43,13 @@ void	load_textures(t_long *game)
 	width = 48;
 	height = 48;
 	game->img_wall = mlx_xpm_file_to_image(game->mlx,
-			"./textures/wall.xpm", &width, &height);
+			"../textures/wall.xpm", &width, &height);
 	game->img_empty = mlx_xpm_file_to_image(game->mlx,
-			"./textures/floor.xpm", &width, &height);
+			"../textures/floor.xpm", &width, &height);
 	game->img_collectible = mlx_xpm_file_to_image(game->mlx,
-			"./textures/collectible.xpm", &width, &height);
+			"../textures/collectible.xpm", &width, &height);
 	game->img_exit = mlx_xpm_file_to_image(game->mlx,
-			"./textures/exit.xpm", &width, &height);
+			"../textures/exit.xpm", &width, &height);
 	load_player(game, width, height);
 }
 

@@ -1,12 +1,12 @@
 # Compiler and flags
 CC = gcc
-# CFLAGS = -Wall -Wextra -Werror -Wno-unused-variable
+CFLAGS = -Wall -Wextra -Werror -Wno-unused-variable
 
 # Directories
-LIBFT_DIR = libft
-GNL_DIR = getnextline
-PRINTF_DIR = printf
-MLX_DIR = minilibx-linux
+LIBFT_DIR = ../libft
+GNL_DIR = ../getnextline
+PRINTF_DIR = ../printf
+MLX_DIR = ../minilibx-linux
 
 # Libraries
 LIBFT = $(LIBFT_DIR)/libft.a
